@@ -19,10 +19,20 @@ A neural network is composed of several fundamental components, each playing a c
 
 Neurons, or nodes, are the basic computational units in a neural network. Mathematically, a neuron computes a weighted sum of its inputs, applies an activation function, and produces an output. This computation is often represented as:
 
-\[ \text{Output} = f(\sum_{i=1}^{n} (w_i \cdot x_i) + b) \]
+Output=f(∑ 
+i=1
+n
+​
+ (w 
+i
+​
+ ⋅x 
+i
+​
+ )+b)
 
 Where:
-- \( \text{Output} \) is the neuron's output.
+- {Output} is the neuron's output.
 - \( f \) is the activation function.
 - \( n \) is the number of inputs.
 - \( w_i \) are the weights associated with each input.
@@ -49,7 +59,19 @@ In an FNN, the input layer receives data, hidden layers perform computations, an
 
 An FNN can be represented as a mathematical function that maps inputs (\(x\)) to outputs (\(y\)) through a series of layers and transformations:
 
-\[ y = f_N(f_{N-1}(\ldots f_2(f_1(x))\ldots)) \]
+y=f 
+N
+​
+ (f 
+N−1
+​
+ (…f 
+2
+​
+ (f 
+1
+​
+ (x))…))
 
 Where:
 - \(f_i\) represents the transformation at layer \(i\).
