@@ -44,13 +44,17 @@ Backward propagation, often referred to as backpropagation, is the phase of trai
 
 3. **Parameter Updates:** Optimization algorithms, such as gradient descent, use the computed gradients to adjust the model's parameters to minimize the loss. The parameter update is typically done using the following equation:
 
-   \[ \text{New Parameter Value} = \text{Old Parameter Value} - \text{Learning Rate} \times \text{Gradient} \]
+ New Parameter Value=Old Parameter Value−Learning Rate×Gradient
 
-   Where:
-   - \(\text{New Parameter Value}\) is the updated parameter value.
-   - \(\text{Old Parameter Value}\) is the current parameter value.
-   - \(\text{Learning Rate}\) controls the size of the update (a hyperparameter).
-   - \(\text{Gradient}\) is the computed gradient.
+represents the parameter update rule used in the context of optimization algorithms, such as gradient descent. Let's break down this formula:
+
+New Parameter Value: This is the updated value of a specific parameter (e.g., weight or bias) in a neural network that the optimization algorithm is trying to optimize.
+
+Old Parameter Value: This is the current value of the parameter that you want to update.
+
+Learning Rate: The learning rate is a hyperparameter that controls the size of the update step. It determines how much the parameter values should change in each iteration of the optimization process. A larger learning rate results in larger steps, potentially speeding up convergence but risking instability, while a smaller learning rate leads to smaller steps, which may improve stability but slow down convergence.
+
+Gradient: The gradient represents the vector of partial derivatives of the loss function with respect to the parameter being updated. In the context of neural network training, this gradient is calculated during the backward propagation phase (backpropagation). It indicates the direction in which the parameter should be adjusted to reduce the loss. The gradient points to the direction of the steepest ascent in the loss landscape, so subtracting it from the old parameter value moves the parameter in the direction of steepest descent (toward a lower loss value).
 
 This process of forward and backward propagation continues for a set number of iterations or until a convergence criterion is met.
 
