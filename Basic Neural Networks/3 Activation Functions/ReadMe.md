@@ -15,7 +15,7 @@ Key characteristics of the sigmoid function:
 - It produces values in the range (0, 1).
 - It's used in the output layer of binary classification models.
 - It suffers from the "vanishing gradient" problem during training, especially in deep networks.
--It maps its input to a range between 0 and 1, making it useful for binary classification problems. The output can be interpreted as a probability.
+- It maps its input to a range between 0 and 1, making it useful for binary classification problems. The output can be interpreted as a probability.
 -Sigmoid is particularly used in the output layer of neural networks for binary classification problems, where it produces a probability that the input belongs to the positive class.
 -It has a characteristic S-shaped curve, which saturates for very large positive and negative values of 
 �
