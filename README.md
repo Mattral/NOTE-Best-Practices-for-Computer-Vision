@@ -90,3 +90,35 @@ These best practices encompass the essence of successful computer vision project
 
 
 Happy coding and visioning!
+
+
+# Reference
+
+
+1. **Basic Neural Networks**:
+   - [Neural Networks and Deep Learning by Michael Nielsen](http://neuralnetworksanddeeplearning.com/)
+   - [Deep Learning Specialization by Andrew Ng on Coursera](https://www.coursera.org/specializations/deep-learning)
+
+2. **Data Processing**:
+   - [Python Data Science Handbook by Jake VanderPlas](https://jakevdp.github.io/PythonDataScienceHandbook/)
+   - [Pandas Documentation](https://pandas.pydata.org/pandas-docs/stable/)
+
+3. **Model Selection**:
+   - [Scikit-learn Documentation on Model Selection](https://scikit-learn.org/stable/model_selection.html)
+
+4. **Hyperparameter Tuning**:
+   - [Hyperparameter Tuning in Machine Learning Models](https://towardsdatascience.com/hyperparameter-tuning-c5619e7e6624)
+
+5. **Fine Tuning**:
+   - [Transfer Learning and Fine-Tuning with Keras](https://keras.io/guides/transfer_learning/)
+
+6. **Deep Learning and Neural Network Architectures**:
+   - [Deep Learning Specialization by Andrew Ng on Coursera](https://www.coursera.org/specializations/deep-learning)
+   - [Stanford CS231n: Convolutional Neural Networks for Visual Recognition](http://cs231n.stanford.edu/)
+
+7. **Backpropagation**:
+   - [Backpropagation Algorithm on Wikipedia](https://en.wikipedia.org/wiki/Backpropagation)
+
+8. **Overfitting and Regularization**:
+   - [Regularization in Machine Learning](https://towardsdatascience.com/regularization-in-machine-learning-76441ddcf99a)
+
