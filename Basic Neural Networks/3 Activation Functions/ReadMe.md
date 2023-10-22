@@ -91,6 +91,35 @@ In addition to these commonly used activation functions, there are several other
 
 In practice, experimenting with different activation functions is often necessary to determine which one performs best for a given task.
 
+## Activation Function Use Cases
+
+1. **Sigmoid Function (Logistic)**:
+   - Used in binary classification problems to produce output in the range (0, 1), representing the probability of the positive class.
+   - Commonly applied in the output layer of a neural network for binary classification tasks.
+
+2. **ReLU (Rectified Linear Unit)**:
+   - Widely used in hidden layers of deep neural networks for its simplicity and effectiveness.
+   - Helps mitigate the vanishing gradient problem and accelerates training.
+   - Suitable for various tasks like image recognition, natural language processing, and more.
+
+3. **Leaky ReLU**:
+   - An improvement over the ReLU function to address the "dying ReLU" problem.
+   - Used when ReLU causes dead neurons or slow convergence.
+   - Popular in convolutional neural networks (CNNs) and deep architectures.
+
+4. **Tanh (Hyperbolic Tangent)**:
+   - Commonly used in hidden layers of neural networks.
+   - Squashes the output to the range (-1, 1), making it zero-centered, which can help the model converge faster.
+   - Suitable for regression tasks and as an alternative to sigmoid for classification.
+
+5. **Softmax**:
+   - Primarily used in the output layer for multi-class classification problems.
+   - Converts raw scores into class probabilities, making it suitable for problems with more than two classes.
+   - Applied in image classification, natural language processing, and various classification tasks.
+
+These are some of the key activation functions and their typical use cases in neural networks. Understanding their roles can greatly impact the performance and effectiveness of your deep learning models.
+
+
 This note provides an overview of popular activation functions used in neural networks. The selection of an activation function can significantly impact the model's training and performance, so it's an important aspect of designing effective neural network architectures.
-```
+
 
