@@ -1,0 +1,108 @@
+
+# Activation Functions in Neural Networks
+
+Activation functions are essential components of neural networks that introduce non-linearity into the model's computations. They determine how the output of a neuron or layer responds to its inputs. In this note, we'll discuss some popular activation functions used in neural networks.
+
+## Sigmoid Function
+
+The sigmoid function is a classic activation function that maps its input to a range between 0 and 1. It's particularly useful in binary classification problems. The mathematical representation of the sigmoid function is:
+
+Sigmoid(x)= 
+1+e 
+−x
+ 
+1
+​
+
+Key characteristics of the sigmoid function:
+
+- It produces values in the range (0, 1).
+- It's used in the output layer of binary classification models.
+- It suffers from the "vanishing gradient" problem during training, especially in deep networks.
+-It maps its input to a range between 0 and 1, making it useful for binary classification problems. The output can be interpreted as a probability.
+-Sigmoid is particularly used in the output layer of neural networks for binary classification problems, where it produces a probability that the input belongs to the positive class.
+-It has a characteristic S-shaped curve, which saturates for very large positive and negative values of 
+�
+x, leading to the "vanishing gradient" problem during training, especially in deep networks.
+-While it's still used in certain contexts, the sigmoid function has been partly replaced by the ReLU (Rectified Linear Unit) activation function in hidden layers, which is computationally efficient and mitigates the vanishing gradient problem.
+-The sigmoid activation function's primary advantage is that it provides a clear probabilistic interpretation for binary classification problems. However, it may suffer from training issues in deep networks, which is why alternative activation functions, such as ReLU and its variants, are often preferred in hidden layers for deep learning tasks.
+
+
+## ReLU (Rectified Linear Unit)
+
+The Rectified Linear Unit (ReLU) is a widely used activation function that introduces non-linearity by returning zero for negative inputs and leaving positive inputs unchanged. The mathematical representation of the ReLU function is:
+
+ReLU(x)=max(0,x)
+
+Key characteristics of the ReLU function:
+
+- It is computationally efficient and easy to optimize during training.
+- It's the default choice for many hidden layers in neural networks.
+- It helps mitigate the "vanishing gradient" problem compared to sigmoid or tanh functions.
+- It is computationally efficient and straightforward to optimize during training.
+- It introduces non-linearity into the model's computations by turning negative values to zero and leaving positive values unchanged.
+- ReLU helps mitigate the "vanishing gradient" problem that can occur when using other activation functions like sigmoid or tanh, especially in deep networks.
+- It is commonly used as the default choice for many hidden layers in neural networks, including Convolutional Neural Networks (CNNs) and deep feedforward networks.
+- Variations of ReLU, such as Leaky ReLU and Parametric ReLU (PReLU), have been introduced to address potential issues with the original ReLU, such as "dying ReLU" problem (neurons never activate) for extremely negative inputs.
+- The ReLU activation function is a crucial part of modern neural network architectures and plays a key role in enabling the networks to learn complex non-linear relationships in data. It is especially popular in deep learning due to its advantages in training deep networks effectively.
+
+## Softmax Function
+
+The softmax function is typically used in the output layer of multi-class classification models to produce class probabilities. It takes an input vector and transforms it into a probability distribution. The mathematical representation of the softmax function for class \(i\) is:
+
+Softmax(x) 
+i
+​
+ = 
+∑ 
+j=1
+N
+​
+ e 
+x 
+j
+​
+ 
+ 
+e 
+x 
+i
+​
+ 
+ 
+​The softmax function takes a vector of input values, often called logits, and transforms them into a probability distribution over multiple classes. Each element of the output vector 
+Softmax
+(
+�
+)
+�
+Softmax(x) 
+i
+​
+  represents the probability that the input 
+�
+x belongs to class 
+�
+i.
+
+
+Key characteristics of the softmax function:
+
+- It produces a probability distribution over multiple classes.
+- It ensures that the sum of the probabilities equals 1.
+- It's commonly used in multi-class classification problems, such as image classification.
+- It ensures that the probabilities sum to 1, making it suitable for multi-class classification problems where an input can belong to one of several classes.
+- The exponentiation (e^) component amplifies the differences between input values, placing higher probability on the class with the highest logit.
+- It is often used in the output layer of neural networks for multi-class classification tasks, such as image classification, natural language processing, and more.
+- The softmax function is part of a family of functions known as the exponential family, which provides a way to convert real-valued numbers into probabilities.
+- The softmax function is a fundamental component in multi-class classification problems, and it plays a key role in determining the predicted class probabilities for an input. It ensures that the output values represent valid probabilities for each class.
+
+## Other Activation Functions
+
+In addition to these commonly used activation functions, there are several other functions, including hyperbolic tangent (tanh), Leaky ReLU, and Parametric ReLU (PReLU), among others. The choice of activation function depends on the specific problem and the architecture of the neural network.
+
+In practice, experimenting with different activation functions is often necessary to determine which one performs best for a given task.
+
+This note provides an overview of popular activation functions used in neural networks. The selection of an activation function can significantly impact the model's training and performance, so it's an important aspect of designing effective neural network architectures.
+```
+
