@@ -43,9 +43,9 @@ Backward propagation, often referred to as backpropagation, is the phase of trai
 2. **Gradient Computation:** The gradients of the loss function with respect to the model parameters are computed using the chain rule. This is done by calculating how changes in each parameter affect the loss.
 
 3. **Parameter Updates:** Optimization algorithms, such as gradient descent, use the computed gradients to adjust the model's parameters to minimize the loss. The parameter update is typically done using the following equation:
-
+```
  New Parameter Value=Old Parameter Value−Learning Rate×Gradient
-
+```
 represents the parameter update rule used in the context of optimization algorithms, such as gradient descent. Let's break down this formula:
 
 New Parameter Value: This is the updated value of a specific parameter (e.g., weight or bias) in a neural network that the optimization algorithm is trying to optimize.
