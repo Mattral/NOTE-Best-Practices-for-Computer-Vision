@@ -11,7 +11,17 @@ Forward propagation is the initial phase of training in which data is passed thr
 
 2. **Weighted Sum:** In each neuron (or node), a weighted sum of the input data is computed using the following equation:
    
-   \[ \text{Weighted Sum} = \sum_{i=1}^{n} (w_i \cdot x_i) + b \]
+   Weighted Sum=∑ 
+i=1
+n
+​
+ (w 
+i
+​
+ ⋅x 
+i
+​
+ )+b
 
    Where:
    - \(\text{Weighted Sum}\) is the result of the weighted sum.
