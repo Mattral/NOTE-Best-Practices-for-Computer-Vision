@@ -21,7 +21,7 @@ So, neural networks are like teams of clever robots that work together to make s
 
 # Repository Guide
 
-Welcome to our repository! Here's a quick overview of what you'll find in our documentation:
+Here's a quick overview of what you'll find in our documentation:
 
 1. **Introduction**
    - A kid-friendly introduction to neural networks, explaining them in a simple and fun way.
