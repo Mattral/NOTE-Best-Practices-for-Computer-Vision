@@ -16,12 +16,11 @@ Key characteristics of the sigmoid function:
 - It's used in the output layer of binary classification models.
 - It suffers from the "vanishing gradient" problem during training, especially in deep networks.
 - It maps its input to a range between 0 and 1, making it useful for binary classification problems. The output can be interpreted as a probability.
--Sigmoid is particularly used in the output layer of neural networks for binary classification problems, where it produces a probability that the input belongs to the positive class.
--It has a characteristic S-shaped curve, which saturates for very large positive and negative values of 
-�
+- Sigmoid is particularly used in the output layer of neural networks for binary classification problems, where it produces a probability that the input belongs to the positive class.
+- It has a characteristic S-shaped curve, which saturates for very large positive and negative values of 
 x, leading to the "vanishing gradient" problem during training, especially in deep networks.
--While it's still used in certain contexts, the sigmoid function has been partly replaced by the ReLU (Rectified Linear Unit) activation function in hidden layers, which is computationally efficient and mitigates the vanishing gradient problem.
--The sigmoid activation function's primary advantage is that it provides a clear probabilistic interpretation for binary classification problems. However, it may suffer from training issues in deep networks, which is why alternative activation functions, such as ReLU and its variants, are often preferred in hidden layers for deep learning tasks.
+- While it's still used in certain contexts, the sigmoid function has been partly replaced by the ReLU (Rectified Linear Unit) activation function in hidden layers, which is computationally efficient and mitigates the vanishing gradient problem.
+- The sigmoid activation function's primary advantage is that it provides a clear probabilistic interpretation for binary classification problems. However, it may suffer from training issues in deep networks, which is why alternative activation functions, such as ReLU and its variants, are often preferred in hidden layers for deep learning tasks.
 
 
 ## ReLU (Rectified Linear Unit)
