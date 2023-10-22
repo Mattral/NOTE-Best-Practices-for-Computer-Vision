@@ -1,3 +1,30 @@
+
+```
+
+├── LICENSE
+├── README.md                <- Brief documentation
+│
+├── basic_neural_networks     <- Folder for Basic Neural Networks section
+│   └── README.md             <- see folders (1 to 8) for details
+│
+├── data_processing           <- Folder for Data Processing section
+│   └── README.md             <- see folders (1 to 4) for details
+│
+├── model_selection           <- Folder for Model Selection section
+│   └── README.md             <- see folders (1 to 4) for details
+│
+├── hyperparameter_tuning     <- Folder for Hyperparameter Tuning section
+│   └── README.md             <- see folders (1 to 4) for details
+│
+├── fine_tuning               <- Folder for Fine Tuning section
+│   └── README.md             <- see folders (1 to 3) for details
+│
+
+
+
+```
+
+
 # Best Practices for Computer Vision: Data Preprocessing, Model Selection, and Hyperparameter Tuning
 
  With the wealth of tools and techniques at our disposal today, achieving outstanding results in computer vision is not only possible but also achievable with the right practices and strategies. In this article, I will share some of the best practices for data preprocessing, model selection, hyperparameter tuning, and fine-tuning in the context of computer vision tasks.
