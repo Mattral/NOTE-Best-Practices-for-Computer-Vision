@@ -13,7 +13,7 @@ Forward propagation is the initial phase of training in which data is passed thr
    
    Weighted Sum=∑ 
 i=1
-n
+n   
 ​
  (w 
 i
