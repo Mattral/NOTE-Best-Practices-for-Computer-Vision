@@ -73,20 +73,6 @@ i
 ```
  
  
-​The softmax function takes a vector of input values, often called logits, and transforms them into a probability distribution over multiple classes. Each element of the output vector 
-Softmax
-(
-�
-)
-�
-Softmax(x) 
-i
-​
-  represents the probability that the input 
-�
-x belongs to class 
-�
-i.
 
 
 Key characteristics of the softmax function:
