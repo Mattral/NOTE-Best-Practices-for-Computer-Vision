@@ -24,7 +24,7 @@ So, neural networks are like teams of clever robots that work together to make s
 Here's a quick overview of what you'll find in our documentation:
 
 1. **Introduction**
-   - A kid-friendly introduction to neural networks, explaining them in a simple and fun way.
+   - A detailed introduction to neural networks.
 
 2. **Training Neural Networks**
    - Detailed insights into training neural networks, including backpropagation and other essential concepts.
@@ -45,5 +45,5 @@ Here's a quick overview of what you'll find in our documentation:
    - Discover the world of deep learning and key neural network architectures like CNNs, RNNs, and Transformers.
 
 8. **Readme.md**
-   - The main readme file for the repository, containing an overview and links to all sections.
+   
 
