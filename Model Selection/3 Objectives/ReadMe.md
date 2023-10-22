@@ -1,6 +1,6 @@
 note discussing the significance of choosing the right loss functions based on the task and providing an overview of commonly used loss functions, along with code examples illustrating their implementation in training models:
 
-```markdown
+
 # Objectives: Choosing the Right Loss Functions in Computer Vision
 
 Choosing the appropriate loss function is crucial in computer vision tasks, as it directly impacts model training and performance. Different tasks, such as classification, regression, and object detection, require specific loss functions to guide the training process effectively. In this note, we'll discuss the significance of selecting the right loss functions and provide an overview of commonly used loss functions, including cross-entropy, mean squared error, and Intersection over Union (IoU). Additionally, we'll include code examples illustrating the implementation of these loss functions in training models.
