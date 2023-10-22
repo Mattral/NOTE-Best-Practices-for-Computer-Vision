@@ -13,7 +13,7 @@ Forward propagation is the initial phase of training in which data is passed thr
    
    Weighted Sum=∑ 
 i=1
-   n
+   
 ​
  (w 
 i
@@ -24,7 +24,7 @@ i
  )+b
 
    Where:
-   - \(\text{Weighted Sum}\) is the result of the weighted sum.
+   - Weighted Sum is the result of the weighted sum.
    - \(w_i\) are the weights.
    - \(x_i\) are the input values.
    - \(b\) is the bias term.
