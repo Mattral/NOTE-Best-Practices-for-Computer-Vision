@@ -83,6 +83,3 @@ model = models.Model(inputs=backbone.input, outputs=segmentation_head)
 ```
 
 When selecting a CNN architecture, consider the specific requirements of your computer vision task, dataset size, available computational resources, and efficiency constraints. Additionally, adapt the code examples to suit your project and data. These architectures serve as strong starting points for achieving high-quality results in image classification, object detection, and semantic segmentation.
-```
-
-Feel free to copy and paste this Markdown content into your documentation or repository, and make any adjustments or additions as needed.
