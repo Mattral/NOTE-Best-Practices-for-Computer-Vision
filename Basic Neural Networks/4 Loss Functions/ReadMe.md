@@ -3,7 +3,7 @@
 
 Loss functions, also known as cost or objective functions, play a pivotal role in training neural networks. They quantify the disparity between the model's predictions and the actual target values. The choice of a loss function is a critical decision, contingent on the specific nature of the task you're addressing. In this note, we aim to provide a comprehensive overview of diverse loss functions employed in neural networks across various tasks.
 
-**Classification Loss Functions**
+## Classification Loss Functions
 
 1. **Binary Cross-Entropy Loss**
    - *Use Case*: Binary classification problems where the target variable assumes one of two classes (0 or 1).
@@ -38,7 +38,7 @@ Loss functions, also known as cost or objective functions, play a pivotal role i
    ```
    where \(L\) is the loss, \(y\) is the true label, \(p\) is the predicted probability, \(N\) is the number of samples, and \(y_i\) is the integer-encoded class label.
 
-**Regression Loss Functions**
+## Regression Loss Functions
 
 4. **Mean Squared Error (MSE)**
    - *Use Case*: Regression tasks where the target variable assumes continuous values.
@@ -77,7 +77,7 @@ Loss functions, also known as cost or objective functions, play a pivotal role i
    ```
    where \(L\) is the loss, \(y\) is the true value, \(p\) is the predicted value, \(N\) is the number of samples, and \(\delta\) is a threshold value.
 
-**Other Loss Functions**
+## Other Loss Functions
 
 7. **Hinge Loss**
    - *Use Case*: Classification problems, particularly in support vector machines and some neural networks.
@@ -101,7 +101,7 @@ Loss functions, also known as cost or objective functions, play a pivotal role i
    ```
    where \(D_{KL}\) is the KL divergence, \(P(i)\) is the probability in distribution \(P\), and \(Q(i)\) is the probability in distribution \(Q\).
 
-**Custom Loss Functions**
+## Custom Loss Functions
 
 9. **Use Case**: In certain scenarios, custom loss functions are designed for specific problems. These could be unique tasks or situations where standard loss functions aren't applicable. For example, custom loss functions are used in generative adversarial networks (GANs) for tasks like image generation.
 
