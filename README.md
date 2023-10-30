@@ -24,6 +24,42 @@
 ├── fine_tuning               <- Folder for Fine Tuning section
 │   └── README.md             <- see folders (1 to 3) for details
 │
+├── computer_vision           <- Folder for Computer Vision Topics
+│   └── README.md             <- Brief introduction to computer vision topics
+│
+│   ├── object_detection      <- Subfolder for Object Detection
+│   │   └── README.md         <- Details on object detection topics
+│
+│   ├── image_segmentation    <- Subfolder for Image Segmentation
+│   │   └── README.md         <- Details on image segmentation topics
+│
+│   ├── yolo_faster_rcnn      <- Subfolder for YOLO and Faster R-CNN
+│   │   └── README.md         <- Details on YOLO and Faster R-CNN
+│
+│   ├── image_captioning      <- Subfolder for Image Captioning and Generation
+│   │   └── README.md         <- Details on image captioning and generative models
+│
+│   ├── object_tracking       <- Subfolder for Object Tracking
+│   │   └── README.md         <- Details on object tracking methods
+│
+│   ├── data_augmentation     <- Subfolder for Data Augmentation in Computer Vision
+│   │   └── README.md         <- Details on data augmentation techniques
+│
+│   ├── hardware_acceleration <- Subfolder for Hardware Acceleration in Computer Vision
+│   │   └── README.md         <- Details on hardware acceleration options
+│
+│   ├── advanced_applications <- Subfolder for Advanced Computer Vision Applications
+│   │   └── README.md         <- Details on more complex applications
+│
+│   ├── ethics_in_cv         <- Subfolder for Ethical Considerations in Computer Vision
+│   │   └── README.md         <- Details on ethical issues in computer vision
+│
+│   ├── deployment_scaling   <- Subfolder for Deployment and Scalability in Computer Vision
+│   │   └── README.md         <- Details on deploying and scaling computer vision models
+│
+│   ├── industry_use_cases    <- Subfolder for Industry-Specific Use Cases in Computer Vision
+│       └── README.md         <- Details on industry-specific applications
+
 
 ```
 
