@@ -29,6 +29,8 @@ The Rectified Linear Unit (ReLU) is a widely used activation function that intro
 
 ReLU(x)=max(0,x)
 
+\[ \text{ReLU}(x) = \max(0, x) \]
+
 Key characteristics of the ReLU function:
 
 - It is computationally efficient and easy to optimize during training.
