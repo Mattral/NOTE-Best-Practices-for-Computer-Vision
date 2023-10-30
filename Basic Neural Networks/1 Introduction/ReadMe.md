@@ -31,6 +31,12 @@ i
 ​
  )+b)
 
+ ```
+[ \text{Output} = f(\sum_{i=1}^{n} (w_i \cdot x_i) + b) ]
+
+// LaTeX Expression
+```
+
 Where:
 - {Output} is the neuron's output.
 - \( f \) is the activation function.
@@ -72,6 +78,11 @@ N−1
 1
 ​
  (x))…))
+
+ ```
+\[ y = f_N(f_{N-1}(\ldots f_2(f_1(x))\ldots)) \]
+//LaTeX expression
+```
 
 Where:
 - \(f_i\) represents the transformation at layer \(i\).
