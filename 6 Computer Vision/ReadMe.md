@@ -4,7 +4,7 @@ Welcome to the Computer Vision Notes repository! This collection of notes provid
 
 ## Table of Contents
 
-1. [Object Detection](./1 Object Detection/ReadMe.md)
+1. [Object Detection]([./1 Object Detection/ReadMe.md](https://github.com/Mattral/NOTE-Best-Practices-for-Computer-Vision/tree/main/6%20Computer%20Vision/1%20Object%20Detection))
    - Explore techniques for identifying and localizing objects within images.
 
 2. [Image Segmentation](./image_segmentation/ReadMe.md)
