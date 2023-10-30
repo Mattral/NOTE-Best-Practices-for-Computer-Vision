@@ -9,6 +9,9 @@ The sigmoid function is a classic activation function that maps its input to a r
 
 Sigmoid(x)= 1/ ( 1 + e**(-x) )
 ​
+```
+\[ \text{Sigmoid}(x) = \frac{1}{1 + e^{-x}} \]
+```
 
 Key characteristics of the sigmoid function:
 
