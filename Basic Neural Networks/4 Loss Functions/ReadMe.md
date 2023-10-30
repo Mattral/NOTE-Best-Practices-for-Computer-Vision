@@ -9,27 +9,33 @@ Loss functions, also known as cost or objective functions, play a pivotal role i
    - *Use Case*: Binary classification problems where the target variable assumes one of two classes (0 or 1).
    - *Description*: Binary cross-entropy loss quantifies the dissimilarity between the predicted class probabilities and true binary labels (0 or 1). It is instrumental in training models to make decisions in binary scenarios.
    - *Mathematical Representation*:
+```
    \[
    L(y, p) = - \frac{1}{N} \sum_{i=1}^{N} [y_i \log(p_i) + (1 - y_i) \log(1 - p_i)]
    \]
+```
    where \(L\) is the loss, \(y\) is the true label, \(p\) is the predicted probability, and \(N\) is the number of samples.
 
 2. **Categorical Cross-Entropy Loss**
    - *Use Case*: Multi-class classification problems where the target variable can be associated with one of several classes.
    - *Description*: The categorical cross-entropy loss evaluates the discord between predicted class probabilities and true one-hot encoded labels. It is a key component in teaching models to make precise multi-class distinctions.
    - *Mathematical Representation*:
+   ```
    \[
    L(y, p) = - \frac{1}{N} \sum_{i=1}^{N} \sum_{j=1}^{C} y_{ij} \log(p_{ij})
    \]
+   ```
    where \(L\) is the loss, \(y\) is the true label, \(p\) is the predicted probability, \(N\) is the number of samples, and \(C\) is the number of classes.
 
 3. **Sparse Categorical Cross-Entropy Loss**
    - *Use Case*: Comparable to categorical cross-entropy but employed when the true class labels are presented as integers (e.g., class indices).
    - *Description*: The sparse categorical cross-entropy loss shares similarities with the categorical variant but accommodates scenarios where class labels are provided as integers rather than one-hot encoded vectors.
    - *Mathematical Representation*:
+   ```
    \[
    L(y, p) = - \frac{1}{N} \sum_{i=1}^{N} \log(p_{iy_i})
    \]
+   ```
    where \(L\) is the loss, \(y\) is the true label, \(p\) is the predicted probability, \(N\) is the number of samples, and \(y_i\) is the integer-encoded class label.
 
 **Regression Loss Functions**
@@ -38,24 +44,29 @@ Loss functions, also known as cost or objective functions, play a pivotal role i
    - *Use Case*: Regression tasks where the target variable assumes continuous values.
    - *Description*: MSE, the most prevalent loss function for regression problems, computes the mean squared difference between predicted values and true target values. It gauges the model's ability to estimate continuous variables accurately.
    - *Mathematical Representation*:
+   ```
    \[
    L(y, p) = \frac{1}{N} \sum_{i=1}^{N} (y_i - p_i)^2
    \]
+   ```
    where \(L\) is the loss, \(y\) is the true value, \(p\) is the predicted value, and \(N\) is the number of samples.
 
 5. **Mean Absolute Error (MAE)**
    - *Use Case*: Regression tasks where robustness to outliers is important.
    - *Description*: MAE calculates the average absolute difference between predicted values and true target values. It is less sensitive to extreme values compared to MSE.
    - *Mathematical Representation*:
+   ```
    \[
    L(y, p) = \frac{1}{N} \sum_{i=1}^{N} |y_i - p_i|
    \]
+   ```
    where \(L\) is the loss, \(y\) is the true value, \(p\) is the predicted value, and \(N\) is the number of samples.
 
 6. **Huber Loss**
    - *Use Case*: Regression problems that necessitate a balance between the behaviors of MSE and MAE. It is advantageous when the dataset contains outliers that can skew the model's learning.
    - *Description*: Huber loss combines the best characteristics of MSE and MAE. It behaves like MAE when the error is close to zero and mimics MSE for larger errors. This makes it a robust choice for regression tasks with varying error magnitudes.
    - *Mathematical Representation*:
+   ```
    \[
    L(y, p) =
    \begin{cases}
@@ -63,6 +74,7 @@ Loss functions, also known as cost or objective functions, play a pivotal role i
    \delta |y_i - p_i| - \frac{1}{2} \delta^2, & \text{otherwise}
    \end{cases}
    \]
+   ```
    where \(L\) is the loss, \(y\) is the true value, \(p\) is the predicted value, \(N\) is the number of samples, and \(\delta\) is a threshold value.
 
 **Other Loss Functions**
@@ -71,18 +83,22 @@ Loss functions, also known as cost or objective functions, play a pivotal role i
    - *Use Case*: Classification problems, particularly in support vector machines and some neural networks.
    - *Description*: Hinge loss is employed to enhance the precision of classification models. It encourages the model to make correct predictions while penalizing it for overly confident incorrect predictions.
    - *Mathematical Representation*:
+   ```
    \[
    L(y, p) = \max(0, 1 - y \cdot p)
    \]
+   ```
    where \(L\) is the loss, \(y\) is the true label (+1 or -1), and \(p\) is the predicted score.
 
 8. **Kullback-Leibler Divergence (KL Divergence)**
    - *Use Case*: Variational autoencoders and models involving probability distributions.
    - *Description*: KL divergence quantifies the difference between two probability distributions and is used in tasks like generating realistic samples.
    - *Mathematical Representation*:
+   ```
    \[
    D_{KL}(P \parallel Q) = \sum_{i} P(i) \log\left(\frac{P(i)}{Q(i)}\right)
    \]
+   ```
    where \(D_{KL}\) is the KL divergence, \(P(i)\) is the probability in distribution \(P\), and \(Q(i)\) is the probability in distribution \(Q\).
 
 **Custom Loss Functions**
