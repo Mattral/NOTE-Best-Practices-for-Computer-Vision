@@ -1,4 +1,4 @@
-Loss Functions in Neural Networks
+# Loss Functions in Neural Networks
 ------------------------
 
 Loss functions, also known as cost or objective functions, play a pivotal role in training neural networks. They quantify the disparity between the model's predictions and the actual target values. The choice of a loss function is a critical decision, contingent on the specific nature of the task you're addressing. In this note, we aim to provide a comprehensive overview of diverse loss functions employed in neural networks across various tasks.
