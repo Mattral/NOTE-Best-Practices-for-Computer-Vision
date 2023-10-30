@@ -30,6 +30,12 @@ Several YOLO variants have been developed to improve performance and cater to sp
 - **YOLOv4**: YOLOv4 incorporates a series of improvements, including a more extensive backbone network, PANet, and the CSPDarknet53 feature pyramid, resulting in superior accuracy and speed.
 
 - **YOLOv5**: YOLOv5 is developed with a focus on model size reduction and deployment efficiency. It maintains high accuracy while being more resource-friendly.
+- **YOLOv6**
+- **YOLOv7**
+- **YOLOv8** successor of YOLOv5 by the same company
+- **YOLO-NAS** model generated using neural architecture search
+- **YOLOR**
+- **YOLOX**
 
 # Faster R-CNN
 
