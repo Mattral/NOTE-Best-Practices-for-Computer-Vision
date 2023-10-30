@@ -55,24 +55,7 @@ The softmax function is typically used in the output layer of multi-class classi
 
 \[ \text{Softmax}(x)_i = \frac{e^{x_i}}{\sum_{j=1}^{N} e^{x_j}} \]
 
-Softmax(x) 
-i
-​
- = 
-∑ 
-j=1
-N
-​
- e 
-x 
-j
-​
- 
- 
-e 
-x 
-i
-​
+// written in LaTeX Expression
 
 ```
  
