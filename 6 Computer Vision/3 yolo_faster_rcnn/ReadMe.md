@@ -30,12 +30,12 @@ Several YOLO variants have been developed to improve performance and cater to sp
 - **YOLOv4**: YOLOv4 incorporates a series of improvements, including a more extensive backbone network, PANet, and the CSPDarknet53 feature pyramid, resulting in superior accuracy and speed.
 
 - **YOLOv5**: YOLOv5 is developed with a focus on model size reduction and deployment efficiency. It maintains high accuracy while being more resource-friendly.
-- **YOLOv6**
-- **YOLOv7**
-- **YOLOv8** successor of YOLOv5 by the same company
-- **YOLO-NAS** model generated using neural architecture search
-- **YOLOR**
-- **YOLOX**
+- **YOLOv6** YOLOv6 is an evolution of the YOLO series, aiming to improve performance and speed in object detection tasks.
+- **YOLOv7**: YOLOv7 continues the YOLO legacy, focusing on accuracy and efficiency.
+- **YOLOv8** : YOLOv8 is the successor of YOLOv5, offering enhanced features and capabilities
+- **YOLO-NAS**: YOLO-NAS is a model generated using neural architecture search, optimizing the network architecture for efficient object detection.
+- **YOLOR**: YOLOR is another variant of YOLO, bringing improvements to the YOLO architecture for better results.
+- **YOLOX**: YOLOX is known for its speed and efficiency in object detection, making it a valuable choice for real-time applications
 
 # Faster R-CNN
 
