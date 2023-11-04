@@ -1,6 +1,4 @@
-Certainly, here's the information in Markdown format:
 
-```markdown
 # Architectural Choices in Computer Vision
 
 Selecting the right CNN architecture is essential for achieving optimal results in various computer vision tasks. In this note, we'll provide guidance on choosing the appropriate architecture for tasks such as image classification, object detection, and segmentation. We'll also highlight the unique characteristics and advantages of specific architectures and provide code examples for popular deep learning frameworks.
