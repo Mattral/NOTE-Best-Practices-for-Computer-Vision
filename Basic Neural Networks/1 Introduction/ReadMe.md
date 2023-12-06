@@ -35,7 +35,6 @@ i
  ```math
 [ \text{Output} = f(\sum_{i=1}^{n} (w_i \cdot x_i) + b) ]
 
-// LaTeX Expression
 ```
 
 Where:
@@ -82,7 +81,6 @@ N−1
 
  ```math
 \[ y = f_N(f_{N-1}(\ldots f_2(f_1(x))\ldots)) \]
-//LaTeX expression
 ```
 
 Where:
