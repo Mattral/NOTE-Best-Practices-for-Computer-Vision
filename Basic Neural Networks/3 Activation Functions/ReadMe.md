@@ -9,7 +9,7 @@ The sigmoid function is a classic activation function that maps its input to a r
 
 Sigmoid(x)= 1/ ( 1 + e**(-x) )
 ​
-```
+```math
 \[ \text{Sigmoid}(x) = \frac{1}{1 + e^{-x}} \]
 ```
 
@@ -70,12 +70,11 @@ Key characteristics of the ReLU function:
 
 The softmax function is typically used in the output layer of multi-class classification models to produce class probabilities. It takes an input vector and transforms it into a probability distribution. The mathematical representation of the softmax function for class \(i\) is:
 
-```
+```math
 
 
 \[ \text{Softmax}(x)_i = \frac{e^{x_i}}{\sum_{j=1}^{N} e^{x_j}} \]
 
-// written in LaTeX Expression
 
 ```
  
