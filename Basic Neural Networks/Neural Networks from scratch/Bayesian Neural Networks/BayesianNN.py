@@ -18,6 +18,14 @@ X_test, y_test = torch.from_numpy(X_test).float(), torch.from_numpy(y_test)
 # Define Bayesian Neural Network model
 class BayesianNN(nn.Module):
     def __init__(self, input_size, hidden_size, output_size):
+        """
+        Bayesian Neural Network model with Gaussian priors and posteriors.
+
+        Parameters:
+        - input_size (int): Number of features in the input.
+        - hidden_size (int): Number of units in the hidden layer.
+        - output_size (int): Number of units in the output layer.
+        """
         super(BayesianNN, self).__init__()
         self.fc1 = nn.Linear(input_size, hidden_size)
         self.fc2 = nn.Linear(hidden_size, output_size)
@@ -27,22 +35,53 @@ class BayesianNN(nn.Module):
         self.prior_std = 1
 
     def forward(self, x):
+        """
+        Forward pass of the Bayesian Neural Network.
+
+        Parameters:
+        - x (Tensor): Input tensor.
+
+        Returns:
+        - Tensor: Output tensor.
+        """
         x = torch.relu(self.fc1(x))
         x = self.fc2(x)
         return x
 
     def calculate_likelihood(self, y_pred, y_true):
+        """
+        Calculate the likelihood of the observed data given the predicted data.
+
+        Parameters:
+        - y_pred (Tensor): Predicted data.
+        - y_true (Tensor): True data.
+
+        Returns:
+        - Tensor: Likelihood.
+        """
         # Assume Gaussian likelihood
         likelihood = torch.distributions.Normal(y_pred, 1e-3).log_prob(y_true).sum()
         return likelihood
 
     def calculate_prior(self):
+        """
+        Calculate the prior distribution of the weights.
+
+        Returns:
+        - Tensor: Prior distribution.
+        """
         # Assume Gaussian prior for weights
         prior = torch.distributions.Normal(0, 1).log_prob(self.fc1.weight).sum() + \
                 torch.distributions.Normal(0, 1).log_prob(self.fc2.weight).sum()
         return prior
 
     def calculate_posterior(self):
+        """
+        Calculate the posterior distribution of the weights.
+
+        Returns:
+        - Tensor: Posterior distribution.
+        """
         # Assume Gaussian posterior for weights
         posterior = torch.distributions.Normal(self.fc1.weight, 1e-3).log_prob(self.fc1.weight).sum() + \
                      torch.distributions.Normal(self.fc2.weight, 1e-3).log_prob(self.fc2.weight).sum()
@@ -50,6 +89,19 @@ class BayesianNN(nn.Module):
 
 # Training function
 def train_bayesian_nn(model, X, y, optimizer, num_samples=10):
+    """
+    Train the Bayesian Neural Network using the Evidence Lower Bound (ELBO) loss.
+
+    Parameters:
+    - model (BayesianNN): Bayesian Neural Network model.
+    - X (Tensor): Input data.
+    - y (Tensor): Target data.
+    - optimizer (torch.optim.Optimizer): PyTorch optimizer.
+    - num_samples (int): Number of samples for stochastic gradient estimation.
+
+    Returns:
+    - float: Total loss.
+    """
     model.train()
     optimizer.zero_grad()
 
@@ -72,6 +124,17 @@ def train_bayesian_nn(model, X, y, optimizer, num_samples=10):
 
 # Prediction function with uncertainty estimates
 def predict_with_uncertainty(model, X, num_samples=100):
+    """
+    Make predictions using the Bayesian Neural Network with uncertainty estimates.
+
+    Parameters:
+    - model (BayesianNN): Bayesian Neural Network model.
+    - X (Tensor): Input data.
+    - num_samples (int): Number of samples for uncertainty estimation.
+
+    Returns:
+    - Tuple: Mean prediction and standard deviation of predictions.
+    """
     model.eval()
     predictions = []
 
@@ -87,6 +150,15 @@ def predict_with_uncertainty(model, X, num_samples=100):
 
 # Visualize predictions with uncertainty
 def visualize_predictions(X, y_true, mean_prediction, std_prediction):
+    """
+    Visualize predictions with uncertainty.
+
+    Parameters:
+    - X (array): Input data.
+    - y_true (array): True target data.
+    - mean_prediction (array): Mean predictions.
+    - std_prediction (array): Standard deviation of predictions.
+    """
     # Select a specific feature for the x-axis (assuming the first feature)
     x_feature = 0
 
@@ -118,8 +190,15 @@ for epoch in range(num_epochs):
 # Test Bayesian Neural Network on test data
 mean_pred, std_pred = predict_with_uncertainty(bayesian_nn_model, X_test)
 
+# Print test data and predictions
+print("Test Data:")
 print(X_test.numpy())
+print("True Labels:")
 print(y_test.numpy())
+print("Mean Predictions:")
+print(mean_pred.squeeze())
+print("Standard Deviation of Predictions:")
+print(std_pred.squeeze())
 
 # Visualize predictions with uncertainty
 visualize_predictions(X_test.numpy(), y_test.numpy(), mean_pred.squeeze(), std_pred.squeeze())
