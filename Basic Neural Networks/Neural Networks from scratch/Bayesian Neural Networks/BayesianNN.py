@@ -1,3 +1,11 @@
+'''
+Simple Bayesian Neural Network (BNN) with one hidden layer
+This architecture is relatively simple and may not be suitable for complex tasks. 
+The choice of architecture, including the number of layers and units, is often problem-specific. 
+In practice, more complex architectures with multiple hidden layers and different activation functions might be used for more challenging tasks
+'''
+
+
 import torch
 import torch.nn as nn
 import torch.optim as optim
