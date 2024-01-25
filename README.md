@@ -2,6 +2,30 @@
 
  With the wealth of tools and techniques at our disposal today, achieving outstanding results in computer vision is not only possible but also achievable with the right practices and strategies. In this article, I will share some of the best practices for data preprocessing, model selection, hyperparameter tuning, and fine-tuning in the context of computer vision tasks.
 
+ ## Understanding how Computer Vision Models work is not as complicated as you may imagine. 
+
+ 📕 𝗗𝗮𝘁𝗮
+ 
+🔹 𝗜𝗺𝗮𝗴𝗲 𝗗𝗮𝘁𝗮 - An image is just Height x Width pixels in the range: 0 to 255.
+
+🔹 𝗗𝗮𝘁𝗮 𝗔𝘂𝗴𝗺𝗲𝗻𝘁𝗮𝘁𝗶𝗼𝗻 - Rotation, gaussian blur, stretching, shifting
+
+📘 𝗖𝗼𝗿𝗲 𝗖𝗼𝗺𝗽𝗼𝗻𝗲𝗻𝘁𝘀
+
+🔹 𝗖𝗼𝗻𝘃𝗼𝗹𝘂𝘁𝗶𝗼𝗻 𝗟𝗮𝘆𝗲𝗿 - Filters that extract features (e.g. edges, corners)
+
+🔹 𝗣𝗼𝗼𝗹𝗶𝗻𝗴 𝗟𝗮𝘆𝗲𝗿 - Downsampling of feature data using max(pixels)
+
+🔹 𝗗𝗡𝗡 - Flatten feature H x W x C into tabular data then train a dense NN
+
+📙 𝗔𝘂𝘅𝗶𝗹𝗶𝗮𝗿𝘆 𝗙𝘂𝗻𝗰𝘁𝗶𝗼𝗻
+
+🔹 𝗡𝗼𝗿𝗺𝗮𝗹𝗶𝘇𝗮𝘁𝗶𝗼𝗻 - Helps vanishing/exploding gradient & convergence
+
+🔹 𝗔𝗰𝘁𝗶𝘃𝗮𝘁𝗶𝗼𝗻 𝗙𝘂𝗻𝗰𝘁𝗶𝗼𝗻 - ReLu used often, introduces non-linearity 
+
+🔹 𝗘𝘃𝗮𝗹𝘂𝗮𝘁𝗶𝗼𝗻 𝗠𝗲𝘁𝗿𝗶𝗰 - Cross-entropy used and errors propagated backwards
+
 ## Directory
 ```
 
