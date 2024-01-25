@@ -28,6 +28,8 @@
 
  It's not as complicated as you would imagine once you understand the building blocks.
 
+ <img align="center" src="img/cnn.jpeg" alt="cnn">
+
 
 ## Folder Directory
 ```
