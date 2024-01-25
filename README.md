@@ -28,7 +28,7 @@
 
  It's not as complicated as you would imagine once you understand the building blocks.
 
- <img align="center" src="img/cnn.jpeg" alt="cnn">
+ <img align="center" src="img/cnn.jpg" alt="cnn">
 
 
 ## Folder Directory
