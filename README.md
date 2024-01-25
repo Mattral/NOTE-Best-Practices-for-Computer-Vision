@@ -6,23 +6,23 @@
 
  📕 𝗗𝗮𝘁𝗮
  
-🔹 𝗜𝗺𝗮𝗴𝗲 𝗗𝗮𝘁𝗮 - An image is just Height x Width pixels in the range: 0 to 255.
+🔹 𝗜𝗺𝗮𝗴𝗲 𝗗𝗮𝘁𝗮 - An image is just Height x Width grid of pixels in the range: 0 to 255.
 
-🔹 𝗗𝗮𝘁𝗮 𝗔𝘂𝗴𝗺𝗲𝗻𝘁𝗮𝘁𝗶𝗼𝗻 - Rotation, gaussian blur, stretching, shifting
+🔹 𝗗𝗮𝘁𝗮 𝗔𝘂𝗴𝗺𝗲𝗻𝘁𝗮𝘁𝗶𝗼𝗻 - Rotation, gaussian blur, stretching, shifting (to increase the diversity of the training dataset)
 
 📘 𝗖𝗼𝗿𝗲 𝗖𝗼𝗺𝗽𝗼𝗻𝗲𝗻𝘁𝘀
 
-🔹 𝗖𝗼𝗻𝘃𝗼𝗹𝘂𝘁𝗶𝗼𝗻 𝗟𝗮𝘆𝗲𝗿 - Filters that extract features (e.g. edges, corners)
+🔹 𝗖𝗼𝗻𝘃𝗼𝗹𝘂𝘁𝗶𝗼𝗻 𝗟𝗮𝘆𝗲𝗿 - Applies filters to extract features like edges and corners.
 
-🔹 𝗣𝗼𝗼𝗹𝗶𝗻𝗴 𝗟𝗮𝘆𝗲𝗿 - Downsampling of feature data using max(pixels)
+🔹 𝗣𝗼𝗼𝗹𝗶𝗻𝗴 𝗟𝗮𝘆𝗲𝗿 - Downsamples feature data using operations like max pooling -> max(pixels)
 
-🔹 𝗗𝗡𝗡 - Flatten feature H x W x C into tabular data then train a dense NN
+🔹 𝗗𝗡𝗡 - Flatten feature H x W x C into tabular data then train a dense neural network.
 
 📙 𝗔𝘂𝘅𝗶𝗹𝗶𝗮𝗿𝘆 𝗙𝘂𝗻𝗰𝘁𝗶𝗼𝗻
 
 🔹 𝗡𝗼𝗿𝗺𝗮𝗹𝗶𝘇𝗮𝘁𝗶𝗼𝗻 - Helps vanishing/exploding gradient & convergence
 
-🔹 𝗔𝗰𝘁𝗶𝘃𝗮𝘁𝗶𝗼𝗻 𝗙𝘂𝗻𝗰𝘁𝗶𝗼𝗻 - ReLu used often, introduces non-linearity 
+🔹 𝗔𝗰𝘁𝗶𝘃𝗮𝘁𝗶𝗼𝗻 𝗙𝘂𝗻𝗰𝘁𝗶𝗼𝗻 - ReLU is commonly used to introduce non-linearity.
 
 🔹 𝗘𝘃𝗮𝗹𝘂𝗮𝘁𝗶𝗼𝗻 𝗠𝗲𝘁𝗿𝗶𝗰 - Cross-entropy used and errors propagated backwards
 
