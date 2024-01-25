@@ -26,7 +26,10 @@
 
 🔹 𝗘𝘃𝗮𝗹𝘂𝗮𝘁𝗶𝗼𝗻 𝗠𝗲𝘁𝗿𝗶𝗰 - Cross-entropy used and errors propagated backwards
 
-## Directory
+ It's not as complicated as you would imagine once you understand the building blocks.
+
+
+## Folder Directory
 ```
 
 ├── LICENSE
