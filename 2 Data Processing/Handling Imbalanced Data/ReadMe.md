@@ -26,3 +26,6 @@ ros = RandomOverSampler(random_state=42)
 
 # Resample the dataset
 X_resampled, y_resampled = ros.fit_resample(X, y)
+```
+
+### 2. SMOTE
