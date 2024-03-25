@@ -28,7 +28,6 @@ ros = RandomOverSampler(random_state=42)
 X_resampled, y_resampled = ros.fit_resample(X, y)
 ```
 
-### 2. SMOTE
 
 ### 2. SMOTE (Synthetic Minority Over-sampling Technique)
 
@@ -44,7 +43,7 @@ smote = SMOTE(random_state=42)
 X_resampled, y_resampled = smote.fit_resample(X, y)
 ```
 
-### 3. 3. Undersampling
+### 3. Undersampling
 Undersampling involves reducing the number of examples in the majority class to balance the class distribution. This method can be effective when you have a large dataset, but it risks losing important information.
 
 ```
